@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dentalinic | Redirecting...</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Redirects 404s back to the root entry point preserving hash and query
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      // Get the base segment (repo name if hosted on user.github.io/repo)
+      var pathSegments = path.split('/').filter(Boolean);
+      var target = './';
+      if (pathSegments.length > 0) {
+        // If loaded inside a subfolder, redirect to the root index
+        target = window.location.origin + '/' + pathSegments[0] + '/' + search + hash;
+      } else {
+        target = window.location.origin + '/' + search + hash;
+      }
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="./">Dentalinic</a>...</p>
+  </body>
+</html>

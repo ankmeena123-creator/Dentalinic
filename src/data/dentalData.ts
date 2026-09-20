@@ -4,6 +4,8 @@ import heroRuchitaAvatarImage from '../assets/images/regenerated_image_178984438
 import doctorRuchitaImage from '../assets/images/regenerated_image_1789844393875.png';
 import doctorAnkitImage from '../assets/images/regenerated_image_1789844401468.png';
 
+const publicAsset = (relPath: string) => `${import.meta.env.BASE_URL || './'}${relPath.replace(/^\.?\//, '')}`;
+
 export const CLINIC_INFO = {
   name: 'Dentalinic',
   tagline: 'Healthy Smiles. Confident You.',
@@ -90,7 +92,7 @@ export const CLINIC_IMAGES = {
   heroOperatoryFallback: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
   heroRuchitaAvatar: heroRuchitaAvatarImage,
   heroRuchitaAvatarFallback: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80',
-  aboutInterior: '/images/clinic-interior.jpg',
+  aboutInterior: publicAsset('images/clinic-interior.jpg'),
   aboutInteriorFallback: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=80',
   drRuchita: doctorRuchitaImage,
   drRuchitaFallback: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80',
@@ -156,7 +158,7 @@ export const SERVICES: ServiceItem[] = [
       'Gentle ultrasonic scaling to remove plaque and stain',
       'Personalized oral care guidance and fluoride treatment'
     ],
-    image: '/images/services/general-dentistry.jpg',
+    image: publicAsset('images/services/general-dentistry.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
     popular: true
   },
@@ -186,7 +188,7 @@ export const SERVICES: ServiceItem[] = [
       'Custom shade matching to your natural complexion',
       'Long-lasting aesthetic materials with natural luster'
     ],
-    image: '/images/services/cosmetic-dentistry.jpg',
+    image: publicAsset('images/services/cosmetic-dentistry.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80',
     popular: true
   },
@@ -216,7 +218,7 @@ export const SERVICES: ServiceItem[] = [
       'Visual 3D simulation of your expected teeth movement',
       'Clear aligner trays tailored to your daily lifestyle'
     ],
-    image: '/images/services/orthodontics.jpg',
+    image: publicAsset('images/services/orthodontics.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80',
     popular: true
   },
@@ -245,7 +247,7 @@ export const SERVICES: ServiceItem[] = [
       'Minimally invasive computer-guided implant surgery',
       'Custom ceramic crown perfectly matched in color'
     ],
-    image: '/images/services/dental-implants.jpg',
+    image: publicAsset('images/services/dental-implants.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80',
     popular: false
   },
@@ -274,7 +276,7 @@ export const SERVICES: ServiceItem[] = [
       'Precision apex locators & rotary files for thorough cleaning',
       'Biocompatible sealing and customized protective crown'
     ],
-    image: '/images/services/root-canal.jpg',
+    image: publicAsset('images/services/root-canal.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80',
     popular: true
   },
@@ -304,7 +306,7 @@ export const SERVICES: ServiceItem[] = [
       'Interactive brushing tutorials for parents and kids',
       'Painless preventive fluoride and sealants'
     ],
-    image: '/images/services/pediatric.jpg',
+    image: publicAsset('images/services/pediatric.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80',
     popular: false
   },
@@ -333,7 +335,7 @@ export const SERVICES: ServiceItem[] = [
       'Deep targeted local anesthesia for total comfort',
       'Comprehensive post-operative healing kit and follow-up'
     ],
-    image: '/images/services/oral-surgery.jpg',
+    image: publicAsset('images/services/oral-surgery.jpg'),
     fallbackImage: 'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=80',
     popular: false
   }
