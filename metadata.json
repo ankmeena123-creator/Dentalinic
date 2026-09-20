@@ -1,0 +1,6 @@
+{
+  "name": "Dentalinic",
+  "description": "Multi-specialty dental clinic in Gurugram, Delhi. Healthy Smiles. Confident You.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
